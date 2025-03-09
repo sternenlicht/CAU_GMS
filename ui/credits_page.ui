@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget</class>
+ <widget class="QWidget" name="widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>나눔고딕</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>이수학점내역</string>
+  </property>
+  <widget class="QFrame" name="mainframe">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>700</width>
+     <height>530</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="to_mainButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔고딕</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>돌아가기</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>661</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>600</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>500</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>60</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>이수학기</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>70</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>이수학점</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser3">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>90</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>150</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>졸업인증제 영어(강의)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label4">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>90</y>
+       <width>150</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>졸업인증제 한자(강의)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser4">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>60</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser5">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>90</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox1">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>65</y>
+       <width>140</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>시험성적을 보유함</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>95</y>
+       <width>140</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>시험성적을 보유함</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label5">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>130</y>
+       <width>90</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CAU세미나</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser6">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>130</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="to_mainButton_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>490</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔고딕</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>복사</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>661</width>
+      <height>220</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser7">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label11">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>선택교양</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label12">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>40</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>공통교양-국어</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser8">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>40</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label21">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label22">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label24">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>100</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label23">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser9">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>70</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label14">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>100</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>공통교양-기타</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label13">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>70</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>공통교양-영어</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser10">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label25">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>130</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label15">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>130</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>교양총계</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser11">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>130</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label29">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>100</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/10</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser16">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label27">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>40</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>핵심-신뢰</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label26">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>핵심-소통</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label28">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>70</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>핵심-융합</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser12">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>10</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser14">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>핵심-창의</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>핵심-도전</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser13">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>40</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser15">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>100</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label30">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>130</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/45</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser17">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>10</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label34">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>100</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label19">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>100</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>자유선택</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label16">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>10</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>전공기초</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label20">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>130</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>교직</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser20">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>100</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser21">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>130</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label18">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>70</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>전공필수</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label17">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>40</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>전공</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser18">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>40</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label35">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>130</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>/22</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser19">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>70</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser22">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>180</y>
+       <width>50</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label36">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>180</y>
+       <width>110</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>취득학점</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser26">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>180</y>
+       <width>51</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser23_2">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>10</y>
+       <width>51</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser24">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>40</y>
+       <width>51</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser25">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>70</y>
+       <width>51</width>
+       <height>30</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
